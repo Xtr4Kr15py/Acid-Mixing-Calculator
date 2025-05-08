@@ -1,0 +1,9 @@
+{
+  "name": "Acid Mixing Calculator",
+  "short_name": "AcidCalc",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#228B22",
+  "icons": []
+}
