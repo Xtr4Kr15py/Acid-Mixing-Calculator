@@ -13,23 +13,23 @@
   color: #222;
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  text-align: center;
+  padding: 2rem;
   margin: 0;
 }
 
 .container {
   max-width: 400px;
   width: 100%;
-  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
 }
 
 label {
   display: block;
   margin-top: 1rem;
   font-weight: bold;
-  text-align: left;
 }
 
 input {
@@ -37,6 +37,7 @@ input {
   padding: 0.5rem;
   font-size: 1rem;
   margin-top: 0.2rem;
+  box-sizing: border-box;
 }
 
 button {
@@ -48,6 +49,7 @@ button {
   border: none;
   border-radius: 5px;
   width: 100%;
+  box-sizing: border-box;
 }
 
 #result {
@@ -55,22 +57,32 @@ button {
   font-size: 1.2rem;
   font-weight: bold;
   color: green;
+  text-align: center;
 }
+
 
   </style>
 </head>
 <body>
-  <h1>Acid Mixing Calculator</h1>
-  <label>Current Volume of Target Tank (gal)</label>
-  <input id="v1" type="number" value="2700" />
-  <label>Current SG of Target Tank</label>
-  <input id="sg1" type="number" step="0.001" value="1.383" />
-  <label>Target SG</label>
-  <input id="sgt" type="number" step="0.001" value="1.390" />
-  <label>Final Desired Volume (gal)</label>
-  <input id="vf" type="number" value="4200" />
-  <button onclick="calculate()">Calculate</button>
-  <div id="result"></div>
+  <div class="container">
+    <h1>Acid Mixing Calculator</h1>
+
+    <label>Current Volume of Target Tank (gal)</label>
+    <input id="v1" type="number" value="2700" />
+
+    <label>Current SG of Target Tank</label>
+    <input id="sg1" type="number" step="0.001" value="1.383" />
+
+    <label>Target SG</label>
+    <input id="sgt" type="number" step="0.001" value="1.390" />
+
+    <label>Final Desired Volume (gal)</label>
+    <input id="vf" type="number" value="4200" />
+
+    <button onclick="calculate()">Calculate</button>
+    <div id="result"></div>
+  </div>
   <script src="main.js"></script>
 </body>
+
 </html>
