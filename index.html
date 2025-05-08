@@ -7,11 +7,56 @@
   <link rel="manifest" href="manifest.json">
   <title>Acid Mixing Calculator</title>
   <style>
-    body { font-family: Arial, sans-serif; padding: 1rem; background: #f9f9f9; color: #222; }
-    label { display: block; margin-top: 1rem; font-weight: bold; }
-    input { width: 100%; padding: 0.5rem; font-size: 1rem; margin-top: 0.2rem; }
-    button { margin-top: 1rem; padding: 0.6rem 1.2rem; font-size: 1rem; }
-    #result { margin-top: 2rem; font-size: 1.2rem; font-weight: bold; color: green; }
+    body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  margin: 0;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  padding: 1rem;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-top: 0.2rem;
+}
+
+button {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #228B22;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+#result {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: green;
+}
+
   </style>
 </head>
 <body>
